@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class ConsoleCalculate {
@@ -47,6 +45,11 @@ public class ConsoleCalculate {
                 int b = Integer.parseInt(second);
                 System.out.println(a / b);
             }
+            if (!(operations.contains(String.valueOf('+'))||operations.contains(String.valueOf('-'))||operations.contains(String.valueOf('*'))
+                    ||operations.contains(String.valueOf('+')))){
+                System.out.println("Not math");
+
+            }
             if (operations.contains("quit")) {
                 System.out.println("finished");
                 break;
@@ -58,15 +61,6 @@ public class ConsoleCalculate {
 
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
