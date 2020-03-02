@@ -45,8 +45,8 @@ public class ConsoleCalculate {
                 int b = Integer.parseInt(second);
                 System.out.println(a / b);
             }
-            if (!(operations.contains(String.valueOf('+'))||operations.contains(String.valueOf('-'))||operations.contains(String.valueOf('*'))
-                    ||operations.contains(String.valueOf('+')))){
+            if (!(operations.contains(String.valueOf('+')) || operations.contains(String.valueOf('-')) || operations.contains(String.valueOf('*'))
+                    || operations.contains(String.valueOf('+')))) {
                 System.out.println("Not math");
 
             }
@@ -55,6 +55,7 @@ public class ConsoleCalculate {
                 break;
             }
         }
+
 
 
     }
