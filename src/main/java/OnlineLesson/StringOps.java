@@ -63,7 +63,7 @@ public class StringOps {
   String toUpperCaseV2(String origin) { // a -> A A -> A
     char[] chars = origin.toCharArray();
     for (int i=0; i < chars.length; i++) {
-      chars[i] = (char) (chars[i]&32); // bit XOR operation
+      chars[i] = (char) (chars[i]&(-33)); // bit XOR operation
     }
     return new String(chars);
   }
@@ -90,7 +90,7 @@ public class StringOps {
   }
 
   public static void main(String[] args) {
-    System.out.println(new StringOps().toLowerCaseV2("HELLo"));
+    System.out.println(new StringOps().toUpperCaseV2("hello"));
     int k = 33;
     int j = k ^ 10 ^ 10; // 33
   }
