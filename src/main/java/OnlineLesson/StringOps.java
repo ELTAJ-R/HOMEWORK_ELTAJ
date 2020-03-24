@@ -90,7 +90,7 @@ public class StringOps {
   }
 
   public static void main(String[] args) {
-    System.out.println(new StringOps().toUpperCaseV2("hello"));
+    System.out.println(new StringOps().toUpperCaseV2("HeLlO"));
     int k = 33;
     int j = k ^ 10 ^ 10; // 33
   }
