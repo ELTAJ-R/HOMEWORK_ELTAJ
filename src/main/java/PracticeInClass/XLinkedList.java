@@ -1,6 +1,7 @@
 package PracticeInClass;
 
 
+import javax.swing.plaf.IconUIResource;
 import java.util.StringJoiner;
 
 public class XLinkedList {
@@ -87,8 +88,13 @@ public class XLinkedList {
         return count;
     }
 
+    int recursionSize(Node curr) {
+        if (curr == null) return 0;
+        else return recursionSize(curr.next) + 1;
+    }
+
     int sizer() {
-        throw new RuntimeException("Should be implemented at home");
+        return recursionSize(head);
     }
 
     int sizetr() {
