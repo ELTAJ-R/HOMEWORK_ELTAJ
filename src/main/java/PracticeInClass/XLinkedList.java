@@ -139,9 +139,7 @@ public class XLinkedList {
 
     void reverse() {
 
-        for (Node curr = null; curr != head; ) {
-            curr = curr.next;
-        }
+
     }
 
     void reverser() {
@@ -152,7 +150,8 @@ public class XLinkedList {
     }
 
     boolean containsAt(int index, int element) {
-        throw new IllegalArgumentException("containsAt:Should be implemented t home");
+        if (indexOf(element) == index) return true;
+        else return false;
     }
 
 

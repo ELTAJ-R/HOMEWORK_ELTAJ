@@ -17,6 +17,7 @@ public class XLinkedListApp {
         System.out.println(xl.indexOf(2));
         System.out.println(xl.indexOf(1));
         System.out.println(xl.indexOf(10));
+        System.out.println(xl.containsAt(1, 2));
         System.out.println(xl.size());
 
 
