@@ -13,12 +13,17 @@ public class XLinkedListApp {
         System.out.println(xl.represent2());
         System.out.println(xl.represent3r());
 
-        System.out.println(xl.indexOf(3));
-        System.out.println(xl.indexOf(2));
-        System.out.println(xl.indexOf(1));
-        System.out.println(xl.indexOf(10));
-        System.out.println(xl.containsAt(1, 2));
-        System.out.println(xl.size());
+//        System.out.println(xl.indexOf(3));
+//        System.out.println(xl.indexOf(2));
+//        System.out.println(xl.indexOf(1));
+//        System.out.println(xl.indexOf(10));
+//        System.out.println(xl.containsAt(1, 2));
+//        System.out.println(xl.size());
+        System.out.println(xl.containsr(1));
+        System.out.println(xl.containsr(2));
+        System.out.println(xl.containsr(3));
+        System.out.println(xl.containsr(40));
+        System.out.println(xl.containsr(50));
 
 
     }

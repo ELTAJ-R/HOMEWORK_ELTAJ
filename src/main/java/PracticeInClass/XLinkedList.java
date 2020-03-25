@@ -115,7 +115,18 @@ public class XLinkedList {
         }
         return count;
     }
+
     //used similar method as in ArrayList
+    boolean checkerIfContainsRe(int element, Node curr) {
+        if (curr == null) return false;
+        if (element == curr.value) return true;
+        else return checkerIfContainsRe(element, curr.next);
+    }
+
+    boolean containsr(int element) {
+        return checkerIfContainsRe(element, head);
+    }
+
 
     int indexOf(int element) {
         if (contains(element)) {
@@ -133,9 +144,6 @@ public class XLinkedList {
         }
     }
 
-
-    void containsr(int element) {
-    }
 
     void reverse() {
 
