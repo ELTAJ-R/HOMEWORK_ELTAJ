@@ -1,6 +1,8 @@
 package PracticeInClass;
 
 
+
+
 public class XLinkedListApp {
     public static void main(String[] args) {
         XLinkedList xl = new XLinkedList();
@@ -24,7 +26,6 @@ public class XLinkedListApp {
 //        System.out.println(xl.containsr(3));
 //        System.out.println(xl.containsr(40));
 //        System.out.println(xl.containsr(50));
-        System.out.println(xl.sizer());
 
 
     }

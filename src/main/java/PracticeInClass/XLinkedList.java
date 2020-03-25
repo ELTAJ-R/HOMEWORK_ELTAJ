@@ -1,7 +1,6 @@
 package PracticeInClass;
 
 
-import javax.swing.plaf.IconUIResource;
 import java.util.StringJoiner;
 
 public class XLinkedList {
@@ -170,6 +169,11 @@ public class XLinkedList {
 
 
     void deleteHead() {
+
+        Node curr = head.next;
+        while (curr != null) {
+            curr = curr.next;
+        }
 
 
     }
