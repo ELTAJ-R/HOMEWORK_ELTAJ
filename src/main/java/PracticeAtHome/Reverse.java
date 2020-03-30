@@ -14,7 +14,7 @@ public class Reverse {
 
     }
 
-  static ArrayList<Object> reverse(List examp){
+ public static ArrayList<Object> reverse(List examp){
       ArrayList<Object> ob = new ArrayList<>();
       for(int i=examp.size()-1;i>=0;i--){
             ob.add(examp.get(i));
