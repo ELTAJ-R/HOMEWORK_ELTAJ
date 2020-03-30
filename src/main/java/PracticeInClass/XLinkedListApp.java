@@ -26,6 +26,10 @@ public class XLinkedListApp {
 //        System.out.println(xl.containsr(3));
 //        System.out.println(xl.containsr(40));
 //        System.out.println(xl.containsr(50));
+        xl.reverser();
+        System.out.println(xl.represent());
+
+
 
 
     }

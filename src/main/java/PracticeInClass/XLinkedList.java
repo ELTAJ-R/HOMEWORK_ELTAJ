@@ -151,11 +151,32 @@ public class XLinkedList {
 
 
     void reverse() {
-
+        Node curr = head;
+        Node prev = null;
+        while (curr != null) {
+            Node savedNext = curr.next; //
+            curr.next = prev;
+            prev = curr;       // moving to the next node
+            curr = savedNext;  // moving to the next node
+        }
+        head = prev;
+    }
+    void reverser() {
+        reverseRecursion(head,null);
 
     }
 
-    void reverser() {
+    private Node reverseRecursion(Node curr,Node prev){
+
+        if(curr==null) return head;
+        curr=head;
+        Node savedNext = curr.next;
+        prev=curr;
+        curr = savedNext;
+        head=prev;
+        return reverseRecursion(curr.next,prev);
+
+
     }
 
     void merge(Node head2) {
